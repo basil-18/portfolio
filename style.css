@@ -466,7 +466,7 @@ span {
 	background: var(--th-color);
 }
 .skills-column:nth-child(1) .skills-content .progress:nth-child(1) .bar span {
-	width: 85%;
+	width: 80%;
 }
 .skills-column:nth-child(1) .skills-content .progress:nth-child(2) .bar span {
 	width: 90%;
@@ -480,72 +480,14 @@ span {
 .skills-column:nth-child(1) .skills-content .progress:nth-child(5) .bar span {
 	width: 50%;
 }
-
-.skill-content {
-	position: relative;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-wrap: wrap;
-	gap: 25px;
+.skills-column:nth-child(2) .skills-content .progress:nth-child(1) .bar span {
+	width: 80%;
 }
-.skill-content .progress {
-	position: relative;
-	width: 150px;
-	height: 150px;
-	border-radius: 50%;
-	color: #fff;
-	background: var(--th-color);
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	
+.skills-column:nth-child(2) .skills-content .progress:nth-child(2) .bar span {
+	width: 50%;
 }
-.skill-content .progress h3 {
-	position: absolute;
-	top: 45%;
-	left: 50%;
-	transform: translate(-50%,-50%);
-	font-size: 2.5rem;
-	z-index: 1;
-	font-weight: 500;
-}
-.skill-content .progress  h3 span {
-	font-size: 1.65rem;
-	font-weight: 400;
-	color: var(--main-color);
-}
-.skill-content .progress h4 {
-	position: absolute;
-	top: 62%;
-	left: 50%;
-	transform: translateX(-50%);
-	z-index: 1;
-	font-weight: 500;
-	color: white;
-	text-transform: uppercase;
-}
-.skill-content .progress::before {
-	content: '';
-	display: block;
-	height: 100%;
-	margin-left: 50%;
-	transform-origin: left;
-	border-radius: 0 100% 100% 0/50%;
-	animation: rotate 1.5s linear infinite;
-	
-}
-.skill-content .progress::after {
-	content: '';
-	position: absolute;
-	inset: 10px;
-	border-radius: 50%;
-	background: var(--second-bg-color);
-}
-.skill-content .progress::before {
-	background: solid var(--second-bg-color);
-	transform: rotate(calc(((var(--i) - 50) * 0.01trun)));
-	
+.skills-column:nth-child(2) .skills-content .progress:nth-child(3) .bar span {
+	width: 70%;
 }
 
 .Contact {
@@ -720,14 +662,7 @@ footer .animate.scroll {
  .circle-spin {
     animation: circle-spin 2s linear infinite;
  }
- @keyframes rotate {
- from {
-    transform: rotate(0deg);
- }
- to {
-    transform: rotate(360deg);
- }
-}
+ 
 
 @media (max-width: 1200px) {
 	html{
@@ -891,3 +826,4 @@ footer .animate.scroll {
 		width: 0;
 	}
 }
+
